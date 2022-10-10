@@ -47,7 +47,7 @@ jobs:
         containers: [dbserver, webserver, others]
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3.1.0
       - run: echo "/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin" >> $GITHUB_PATH
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3

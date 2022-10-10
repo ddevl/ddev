@@ -52,7 +52,7 @@ jobs:
       DDEV_TEST_NO_BIND_MOUNTS: ${{ matrix.no-bind-mounts }}
       GOTEST_SHORT: "8"
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3.1.0
       - run: echo "/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin" >> $GITHUB_PATH
       - name: Install Docker and deps (Linux)
         if: matrix.os == 'ubuntu-20.04'
